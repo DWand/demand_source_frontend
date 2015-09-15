@@ -1,0 +1,24 @@
+{
+  "name": "Demand_Sources_management_platform",
+  "version": "0.0.0",
+  "authors": [
+    "olegmel <ol.meleshko@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5",
+    "components-font-awesome": "~4.4.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-bootstrap": "~0.13.3",
+    "angular-ui-bootstrap": "~0.13.3"
+  }
+}
