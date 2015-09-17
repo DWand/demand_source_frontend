@@ -1,0 +1,123 @@
+<header class="row subheader">
+  <div class="col-sm-12">
+    Basic Info
+  </div>
+</header>
+
+<section class="row">
+
+  <div class="col-sm-5 form-horizontal">
+
+    <div class="form-group">
+      <label class="control-label col-sm-12" for="adSourceEdit_description">Description</label>
+      <div class="col-sm-12">
+        <textarea class="form-control" id="adSourceEdit_description"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-1 control-label" for="adSourceEdit_url">URL</label>
+      <div class="col-sm-11">
+        <input type="text" class="form-control" id="adSourceEdit_url">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="adSourceEdit_type">AdSource Type</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="adSourceEdit_type">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="adSourceEdit_floorCPM">Floor CPM</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="adSourceEdit_floorCPM">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="adSourceEdit_reqTimeout">Request Timeout</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="adSourceEdit_reqTimeout">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-sm-4">
+
+    <div class="form-group">
+      <label class="control-label" for="">Select Dates</label>
+      <div class="row">
+        <div class="col-sm-5">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-sm-2">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+                Unlimited
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="btn-group" dropdown is-open="status.isopen" ng-init="GMT = 'GMT + 1'">
+        <button type="button" class="btn btn-default">{{ GMT }}</button>
+        <button type="button" class="btn btn-default" dropdown-toggle>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li role="menuitem"><a ng-click="GMT = 'GMT +1'">GMT +1</a></li>
+          <li role="menuitem"><a ng-click="GMT = 'GMT +2'">GMT +2</a></li>
+          <li role="menuitem"><a ng-click="GMT = 'GMT +3'">GMT +3</a></li>
+          <li role="menuitem"><a ng-click="GMT = 'GMT +4'">GMT +4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3">
+    <div class="form-group text-right">
+      <div class="btn-group">
+          <label class="btn btn-xs btn-danger" btn-radio="true">Enabled</label>
+          <label class="btn btn-xs btn-default" btn-radio="false">Disabled</label>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<header class="row subheader">
+  <div class="col-sm-12">
+    Delivery Policy
+  </div>
+</header>
+
+<section class="row">
+
+  <div class="col-sm-12">
+
+
+
+  </div>
+
+</section>
+
+
+<header class="row subheader">
+  <div class="col-sm-12">
+    Targeting
+  </div>
+</header>
+
+<section class="row">
+
+</section>

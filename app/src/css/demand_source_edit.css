@@ -1,0 +1,16 @@
+.subheader {
+  padding: 10px 10px;
+  font-size: 20px;
+  color: #2e2e2e;
+  background-color: #FAF9F7;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  border-left: 5px solid red;
+}
+
+.control-label,
+.form-horizontal .control-label {
+  text-align: left;
+  font-weight: normal;
+  padding-top: 7px;
+}

@@ -14,13 +14,13 @@ DemandSources_mp.config(['$stateProvider', '$urlRouterProvider', function($state
           controller: 'ScenarioEditController'
         })
 
-        .state('app.demand_source.list', {
+        .state('demand_source', {
             url: "/demand_source",
             templateUrl: '../views/demand_source_list.html',
             controller: 'DemandSourceListController'
         })
 
-        .state('app.demand_source.edit', {
+        .state('demand_source_edit', {
           url: '/demand_source/:id',
           templateUrl: '../views/demand_source_edit.html',
           controller: 'DemandSourceEditController'
