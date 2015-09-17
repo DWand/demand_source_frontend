@@ -2,7 +2,7 @@
   "name": "Demand_Sources_management_platform",
   "version": "0.0.0",
   "authors": [
-    "olegmel <ol.meleshko@gmail.com>"
+    "maxprychynenko <maxprychynenko@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -19,6 +19,7 @@
     "components-font-awesome": "~4.4.0",
     "angular-ui-router": "~0.2.15",
     "angular-bootstrap": "~0.13.3",
-    "angular-ui-bootstrap": "~0.13.3"
+    "angular-ui-bootstrap": "~0.13.3",
+    "restangular": "~1.5.1"
   }
 }

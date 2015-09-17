@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/bower/bin/bower install"
   },
-  "author": "",
+  "author": "maxprychynenko <maxprychynenko@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.5.2",

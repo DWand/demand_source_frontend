@@ -17,7 +17,7 @@ gulp.task('components', function() {
 });
 
 gulp.task('scripts', function() {
-    gulp.src(['./app/src/js/**/*.js'])
+    gulp.src(['./app/src/js/app.js', './app/src/js/**/*.js'])
         .pipe(uglify())
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('./app/build/js/'));
