@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="DemandSources_mp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./components/components-font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/app.min.css"/>
+</head>
+<body ng-controller="MainController as main">
+
+  <header class="container-fluid">
+    <div class="container">
+      <div class="col-md-8">
+        {{page.title}}
+      </div>
+      <div class="col-md-4">
+        #{{page.entity.id}}
+      </div>
+    </div>
+  </header>
+
+  <div class="main-wrapper container" ui-view></div>
+
+  <footer></footer>
+<script src="./components/jquery/dist/jquery.min.js"></script>
+<script src="./components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./components/angular/angular.js"></script>
+<script src="./components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="./components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="./components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="./js/app.min.js"></script>
+</body>
+</html>

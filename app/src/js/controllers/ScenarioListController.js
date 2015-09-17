@@ -1,3 +1,13 @@
 DemandSources_mp.controller('ScenarioListController', ['$scope', '$state', function($scope, $state) {
-  console.log('Scenario List');
+
+  $scope.list = [
+    {
+      'title': '123'
+    },
+
+    {
+      'title': '456'
+    }
+  ];
+
 }]);
