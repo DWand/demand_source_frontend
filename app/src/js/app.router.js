@@ -2,13 +2,13 @@ DemandSources_mp.config(['$stateProvider', '$urlRouterProvider', function($state
     $urlRouterProvider.otherwise("/scenario");
 
     $stateProvider
-        .state('app.scenario.list', {
+        .state('scenario', {
             url: "/scenario",
             templateUrl: '../views/scenario_list.html',
             controller: 'ScenarioListController'
         })
 
-        .state('app.scenario.edit', {
+        .state('scenario_edit', {
           url: '/scenario/:id',
           templateUrl: '../views/scenario_edit.html',
           controller: 'ScenarioEditController'
@@ -26,7 +26,7 @@ DemandSources_mp.config(['$stateProvider', '$urlRouterProvider', function($state
           controller: 'DemandSourceEditController'
         })
 
-        .state('app.domain_list.list', {
+        .state('domain_list', {
           url: '/domain_list',
           templateUrl: '../views/domain_list.html',
           controller: 'DomainListController'

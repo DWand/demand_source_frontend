@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="./components/components-font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./css/app.min.css"/>
 </head>
-<body ng-controller="MainController as main">
+<body ng-controller="MainController">
 
   <header class="container-fluid">
-    <div class="container">
-      <div class="col-md-8">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2 col-xs-6 header-entity-title">
         {{page.title}}
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4 col-xs-6 header-entity-id">
         #{{page.entity.id}}
       </div>
     </div>
   </header>
 
-  <div class="main-wrapper container" ui-view></div>
+  <div class="container-fluid">
+    <div class="col-sm-2"></div>
 
-  <footer></footer>
+      <div class="main-wrapper col-sm-8" ui-view> </div>
+
+    <div class="col-sm-2"></div>
+  </div>
+
+  <footer>
+    <a ui-sref="scenario">Scenario</a> |
+    <a ui-sref="scenario_edit({id: 123})">Scenario Edit : /123</a> |
+    <a ui-sref="domain_list">Domain List</a>
+  </footer>
+
 <script src="./components/jquery/dist/jquery.min.js"></script>
 <script src="./components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./components/angular/angular.js"></script>

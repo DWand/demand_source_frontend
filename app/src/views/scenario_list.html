@@ -1,3 +1,65 @@
-<p ng-repeat="scenario in list">
-  {{scenario.title}}
-</p>
+<div class="row nav-scenario">
+  <div class="col-sm-3">
+    <a ui-sref="new_scenario">Inventory Scenario</a>
+  </div>
+
+  <div class="col-sm-3">
+    <a ui-sref="new_scenario">Archived</a>
+  </div>
+
+  <div class="col-sm-3 col-sm-offset-3 nav-scenario-newbtn-container">
+    <a ui-sref="new_scenario">+ Add New Scenario</a>
+  </div>
+</div>
+
+<div class="row quick-filter-row">
+  <div class="col-sm-4 col-xs-12">
+
+    <input type="text" class="form-control" placeholder="Quick Filter">
+
+  </div>
+</div>
+
+<div class="row ds-table-row">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th class="col-sm-4">
+          Scenario
+        </th>
+        <th class="col-sm-4">
+          ID
+        </th>
+        <th class="col-sm-4">
+          Actions
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          The Best One of Scenarios
+        </td>
+
+        <td>
+          A123@#123sda
+        </td>
+
+        <td>
+          <div class="ds-actions-list row">
+            <a>
+              <i class="fa fa-pencil"></i> Edit
+            </a>
+            <a>
+              <i class="fa fa-print"></i> Archive
+            </a>
+            <a>
+              <i class="fa fa-copy"></i>Duplicate
+            </a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,51 @@
+div.nav-scenario {
+  position: relative;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 1.7em;
+  line-height: 35px;
+}
+
+div.nav-scenario:before {
+  position: absolute;
+  height: 36px;
+  width: 5px;
+  background-color: red;
+  left: 0;
+  top: -1px;
+}
+
+div.nav-scenario > div.col-sm-3 {
+  border-right: 1px solid #aaa;
+}
+
+div.nav-scenario > div.nav-scenario-newbtn-container {
+  background-color: red;
+  padding: 0px;
+  text-align: center;
+}
+
+div.nav-scenario > div.nav-scenario-newbtn-container > a {
+  color: #fff;
+  cursor: pointer;
+}
+
+div.nav-scenario-newbtn-container > a:hover {
+  text-decoration: none;
+}
+
+div.nav-scenario > div > a {
+  color: #000;
+  cursor: pointer;
+}
+
+div.nav-scenario > div > a:hover {
+  text-decoration: none;
+}
+
+
+div.quick-filter-row {
+  padding: 20px 0px;
+}

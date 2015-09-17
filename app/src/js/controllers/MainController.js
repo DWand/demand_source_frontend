@@ -1,5 +1,5 @@
 DemandSources_mp.controller('MainController', ['$scope', '$state', function($scope, $state) {
-  console.log('Main', $scope);
+  console.log('Main', $scope, $state);
 
   $scope.page = {
     title: 'Main',

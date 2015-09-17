@@ -1,6 +1,23 @@
+body {
+  background-color: #f3f1ec;
+}
+
 header {
   background-color: #404348;
-  height: 35px;
+  padding: 20px 10px;
   color: #fff;
   font-size: 15pt;
+  margin-bottom: 0px;
+}
+
+div.main-wrapper {
+  background-color: #fff;
+}
+
+div.header-entity-title {
+  text-align: left;
+}
+
+div.header-entity-id {
+  text-align: right;
 }

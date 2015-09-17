@@ -10,4 +10,6 @@ DemandSources_mp.controller('ScenarioListController', ['$scope', '$state', funct
     }
   ];
 
+  console.log('scenario list controller');
+
 }]);

@@ -1,0 +1,35 @@
+div.ds-table-row {
+
+}
+
+div.ds-table-row > table > thead {
+  background-color: #aaa;
+  color: #fff;
+  font-size: 1.6em;
+}
+
+div.ds-table-row > table > thead > tr  > th {
+  padding: 10px;
+  font-weight: 200;
+  padding-left: 30px;
+}
+
+div.ds-table-row > table > tbody > tr > td {
+  text-align: center;
+}
+
+div.ds-table-row > table > tbody > tr > td > div.ds-actions-list {
+  color: #5a5a5a;
+}
+
+div.ds-table-row > table > tbody > tr > td > div.ds-actions-list > a {
+  min-width: 20%;
+  margin-right: 10px;
+  color: #a5a5a5;
+}
+
+div.ds-table-row > table > tbody > tr > td > div.ds-actions-list > a:hover {
+  text-decoration: none;
+  color: #474747;
+  cursor: pointer;
+}
