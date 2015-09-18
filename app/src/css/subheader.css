@@ -1,0 +1,27 @@
+div.subheader {
+  position: relative;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 1.7em;
+  line-height: 35px;
+}
+
+div.subheader:before {
+  position: absolute;
+  height: 36px;
+  width: 5px;
+  background-color: red;
+  left: 0;
+  top: -1px;
+}
+
+div.subheader > div > a {
+  color: #000;
+}
+
+div.subheader > div > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}

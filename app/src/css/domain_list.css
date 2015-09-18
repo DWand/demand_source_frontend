@@ -1,6 +1,4 @@
 div.nav-domain_list {
-  border-left: 5px solid red;
-  border-bottom: 1px solid #aaa;
   padding-left: 5px;
   font-size: 1.7em;
   min-height: 30px;
@@ -8,7 +6,6 @@ div.nav-domain_list {
 
 div.nav-domain_list > div.nav-domain_list-newbtn-container {
   background-color: red;
-  border-bottom: 2px solid red;
   padding: 0px;
   text-align: center;
 }

@@ -1,17 +1,17 @@
-<header class="row subheader">
+<div class="row subheader">
   <div class="col-sm-12">
-    Basic Info
+    <a ui-sref="new_scenario">Basic Info</a>
   </div>
-</header>
+</div>
 
-<section class="row">
+<section class="row ds-form-wrapper">
 
   <div class="col-sm-5 form-horizontal">
 
     <div class="form-group">
       <label class="control-label col-sm-12" for="adSourceEdit_description">Description</label>
       <div class="col-sm-12">
-        <textarea class="form-control" id="adSourceEdit_description"></textarea>
+        <textarea class="form-control" id="adSourceEdit_description" placeholder="Input text"></textarea>
       </div>
     </div>
 
@@ -86,8 +86,10 @@
   <div class="col-sm-3">
     <div class="form-group text-right">
       <div class="btn-group">
-          <label class="btn btn-xs btn-danger" btn-radio="true">Enabled</label>
-          <label class="btn btn-xs btn-default" btn-radio="false">Disabled</label>
+          <!-- <label class="btn btn-xs btn-danger" btn-radio="true">Enabled</label>
+          <label class="btn btn-xs btn-default" btn-radio="false">Disabled</label> -->
+          <label class="btn btn-xs btn-danger">Enabled</label>
+          <label class="btn btn-xs btn-default">Disabled</label>
       </div>
     </div>
   </div>
@@ -95,16 +97,78 @@
 </section>
 
 
-<header class="row subheader">
+<div class="row subheader">
   <div class="col-sm-12">
-    Delivery Policy
+    <a ui-sref="new_scenario">Delivery Policy</a>
   </div>
-</header>
+</div>
 
-<section class="row">
+<section class="row ds-form-wrapper">
 
-  <div class="col-sm-12">
+  <div class="col-sm-7 form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="adSourceEdit_request_caps">Ad Request Caps</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="adSourceEdit_request_caps">
+      </div>
 
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="btn-group" dropdown is-open="status2.isopen" ng-init="request_caps = 'Daily'">
+            <button type="button" class="btn btn-default">{{ request_caps }}</button>
+            <button type="button" class="btn btn-default" dropdown-toggle>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menuitem"><a ng-click="request_caps = 'Daily'">Daily</a></li>
+              <li role="menuitem"><a ng-click="request_caps = 'Unlimited'">Unlimited</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="adSourceEdit_impression_caps">Impression Caps</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="adSourceEdit_impression_caps">
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="btn-group" dropdown is-open="status3.isopen" ng-init="impression_caps = 'Daily'">
+            <button type="button" class="btn btn-default">{{ impression_caps }}</button>
+            <button type="button" class="btn btn-default" dropdown-toggle>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menuitem"><a ng-click="impression_caps = 'Daily'">Daily</a></li>
+              <li role="menuitem"><a ng-click="impression_caps = 'Unlimited'">Unlimited</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="adSourceEdit_impression_caps">Frequency Caps</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="adSourceEdit_frequency_caps">
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="btn-group" dropdown is-open="status4.isopen" ng-init="frequency_caps = 'Daily'">
+            <button type="button" class="btn btn-default">{{ frequency_caps }}</button>
+            <button type="button" class="btn btn-default" dropdown-toggle>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menuitem"><a ng-click="frequency_caps = 'Daily'">Daily</a></li>
+              <li role="menuitem"><a ng-click="frequency_caps = 'Unlimited'">Unlimited</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </div>
@@ -112,12 +176,12 @@
 </section>
 
 
-<header class="row subheader">
+<div class="row subheader">
   <div class="col-sm-12">
-    Targeting
+    <a ui-sref="new_scenario">Targeting</a>
   </div>
-</header>
+</div>
 
-<section class="row">
+<section class="row ds-form-wrapper">
 
 </section>
