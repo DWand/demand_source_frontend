@@ -12,7 +12,7 @@ div.subheader:before {
   position: absolute;
   height: 36px;
   width: 5px;
-  background-color: red;
+  background-color: #f62d2d;
   left: 0;
   top: -1px;
 }

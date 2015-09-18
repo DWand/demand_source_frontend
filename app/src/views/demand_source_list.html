@@ -1,0 +1,78 @@
+<div class="row nav-scenario subheader">
+  <div class="col-sm-3">
+    <a ui-sref="new_scenario">Ad Sources</a>
+  </div>
+
+  <div class="col-sm-3">
+    <a ui-sref="new_scenario">Archived</a>
+  </div>
+
+  <div class="col-sm-3 col-sm-offset-3 nav-scenario-newbtn-container">
+    <a ui-sref="new_scenario">+ Add new ad source</a>
+  </div>
+</div>
+
+<div class="row quick-filter-row">
+  <div class="col-sm-5 col-xs-12">
+    <input type="text" class="form-control" placeholder="Search ad source">
+  </div>
+
+  <div class="col-sm-7 col-xs-12 alphabet-filter-wrapper text-right">
+    <span ng-repeat="letter in alphabet">
+      <span class="alphabet-filter-separator" ng-if="!$first"> | </span>
+      <a class="alphabet-filter-link" >{{ letter }}</a>
+    </span>
+  </div>
+</div>
+
+
+<div class="row ds-table-row">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th class="col-sm-3">
+          Ad source type
+        </th>
+        <th class="col-sm-3">
+          Name
+        </th>
+        <th class="col-sm-3">
+          Status
+        </th>
+        <th class="col-sm-3">
+          Actions
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          The Best One of Scenarios
+        </td>
+
+        <td>
+          A123@#123sda
+        </td>
+
+        <td>
+          A123@#123sda
+        </td>
+
+        <td>
+          <div class="ds-actions-list row">
+            <a>
+              <i class="fa fa-pencil"></i> Edit
+            </a>
+            <a>
+              <i class="fa fa-print"></i> Archive
+            </a>
+            <a>
+              <i class="fa fa-copy"></i>Duplicate
+            </a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

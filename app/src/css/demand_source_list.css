@@ -1,0 +1,19 @@
+
+.alphabet-filter-wrapper {
+  padding: 5px;
+}
+
+span.alphabet-filter-separator {
+  font-size: 1.27em;
+}
+
+a.alphabet-filter-link {
+  font-size: 1.27em;
+  color: #515151;
+}
+
+a.alphabet-filter-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #441414;
+}

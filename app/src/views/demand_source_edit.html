@@ -120,7 +120,7 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
-              <li role="menuitem"><a ng-click="request_caps = 'Daily'">Daily</a></li>
+              <li role="menuitem"><a ng-click="request_caps = 'Daily'" ng-mo>Daily</a></li>
               <li role="menuitem"><a ng-click="request_caps = 'Unlimited'">Unlimited</a></li>
             </ul>
           </div>
@@ -154,7 +154,12 @@
       <div class="col-sm-5">
         <input type="text" class="form-control" id="adSourceEdit_frequency_caps">
       </div>
-      <div class="col-sm-3">
+
+      <label class="col-sm-2 control-label">
+        Per User
+      </label>
+
+      <div class="col-sm-2">
         <div class="form-group">
           <div class="btn-group" dropdown is-open="status4.isopen" ng-init="frequency_caps = 'Daily'">
             <button type="button" class="btn btn-default">{{ frequency_caps }}</button>
@@ -162,15 +167,13 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
-              <li role="menuitem"><a ng-click="frequency_caps = 'Daily'">Daily</a></li>
+              <li><a ng-click="frequency_caps = 'Daily'">Daily</a></li>
               <li role="menuitem"><a ng-click="frequency_caps = 'Unlimited'">Unlimited</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 
 </section>
@@ -183,5 +186,66 @@
 </div>
 
 <section class="row ds-form-wrapper">
+  <div class="col-sm-12">
+    <h4>Filtering</h4>
+
+    <div class="row filtering-wrapper">
+        <div class="col-sm-1">
+          <!-- plus -->
+          <div class="ds_plus">
+            +
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!-- Location -->
+          <div class="btn-group btn-block" dropdown is-open="status5.isopen" ng-init="location = 'Location'">
+            <button type="button" class="btn btn-default col-sm-11">{{ location }}</button>
+            <button type="button" class="btn btn-default col-sm-1" dropdown-toggle>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu btn-block" role="menu">
+              <li role="menuitem"><a ng-click="location = 'Another'">Another</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <!-- is -->
+          <div class="form-group">
+            <div class="btn-group btn-block" dropdown is-open="status6.isopen" ng-init="is = 'is'">
+              <button type="button" class="btn btn-default col-sm-8">{{ is }}</button>
+              <button type="button" class="btn btn-default col-sm-2" dropdown-toggle>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu btn-block" role="menu">
+                <li><a ng-click="is = 'is not'">is not</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!-- beach -->
+            <input type="text" class='form-control' name="name" value="">
+
+        </div>
+
+        <div class="col-sm-1">
+          <!-- X -->
+          <div class="ds_remove">
+            <i class="fa fa-remove"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <h4>Target the day of week\time of the day</h4>
+
+    Place for TimeMatrix
+  </div>
+
+
 
 </section>

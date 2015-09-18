@@ -5,7 +5,40 @@
   padding-top: 7px;
 }
 
-ul.dropdown-menu {}
 .ds-form-wrapper {
   padding: 15px;
+}
+
+.filtering-wrapper {
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+}
+
+.ds_plus {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #f62d2d;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.ds_remove {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #404348;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.btn-block {
+  width: 100%;
 }

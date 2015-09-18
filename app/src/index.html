@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html ng-app="DemandSources_mp">
+<html ng-app="DemandSources_mp" ng-controller="MainController">
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>{{state.current.title}}</title>
     <link rel="stylesheet" href="./components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./components/components-font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./css/app.min.css"/>
 </head>
-<body ng-controller="MainController">
+<body >
+  <a ui-sref="scenario">Scenario</a> |
+  <a ui-sref="scenario_edit({id: 123})">Scenario Edit : /123</a> |
+  <a ui-sref="domain_list">Domain List</a> |
+  <a ui-sref="demand_source_edit({id: 123})">DS Edit : /123</a> |
+  <a ui-sref="demand_source">Demand Sources list</a> |
 
   <header class="container-fluid">
     <div class="row">
       <div class="col-sm-4 col-sm-offset-2 col-xs-6 header-entity-title">
-        {{page.title}}
+        {{state.current.title}}
       </div>
       <div class="col-sm-4 col-xs-6 header-entity-id">
         #{{page.entity.id}}
@@ -29,15 +34,13 @@
   </div>
 
   <footer>
-    <a ui-sref="scenario">Scenario</a> |
-    <a ui-sref="scenario_edit({id: 123})">Scenario Edit : /123</a> |
-    <a ui-sref="domain_list">Domain List</a> |
-    <a ui-sref="demand_source_edit({id: 123})">DS Edit : /123</a> |
+
   </footer>
 
 <script src="./components/jquery/dist/jquery.min.js"></script>
 <script src="./components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./components/angular/angular.js"></script>
+<script src="./components/angular-animate/angular-animate.js"></script>
 <script src="./components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="./components/lodash/lodash.js"></script>
 <script src="./components/restangular/dist/restangular.js"></script>
