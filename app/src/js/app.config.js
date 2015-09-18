@@ -3,7 +3,7 @@ angular.module('DemandSources_mp').config([
 'RestangularProvider',
 function(RestangularProvider) {
 
-    RestangularProvider.setBaseUrl('/api');
+    RestangularProvider.setBaseUrl('api');
     RestangularProvider.setRequestSuffix('/');
 
     RestangularProvider.setResponseExtractor(function(response, operation) {
