@@ -9,6 +9,7 @@ angular.module('DemandSources_mp').run([
 'TargetingInfoPlatformsService',
 'TargetingInfoPublishersService',
 'TargetingInfoOssService',
+'Restangular',
 function(
     DemandSourcesService,
     DomainListsService,
@@ -19,7 +20,8 @@ function(
     TargetingInfoGeosService,
     TargetingInfoPlatformsService,
     TargetingInfoPublishersService,
-    TargetingInfoOssService
+    TargetingInfoOssService,
+    Restangular
 ) {
 
     window.api = {
@@ -33,6 +35,11 @@ function(
         info_platforms: TargetingInfoPlatformsService,
         info_publishers: TargetingInfoPublishersService,
         info_oss: TargetingInfoOssService,
+        setBasePath: setBasePath,
     };
+
+    function setBasePath(path) {
+        Restangular.setBaseUrl(path);
+    }
 
 }]);
